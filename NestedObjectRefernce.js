@@ -3,8 +3,8 @@ Object.prototype.hash = function (string) {
     propertiesArray = string.split(".");
     let value = this;
 
-    for (let items = 0; items < propertiesArray.length; items++) {
-        let property = propertiesArray[items];
+    for (let propertyNumber = 0; propertyNumber < propertiesArray.length; propertyNumber++) {
+        let property = propertiesArray[propertyNumber];
         if (value[property] !== undefined) {
             value = value[property];
         }
